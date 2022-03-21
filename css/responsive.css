@@ -1,0 +1,159 @@
+
+
+/* *******responsive******* */
+/* *******responsive******* */
+
+
+/* ****************tablet******************* */
+@media only screen and (max-width:850px) {
+    .banner {
+        height: auto;
+    }
+
+    .banner-search {
+        width: 100%;
+    }
+
+    .banner-content {
+        flex-flow: wrap column;
+        justify-content: center;
+    }
+
+    .search-bar {
+        padding-top: 100px;
+    }
+
+    .log-in {
+        width: 58%;
+        transform: translatey(0);
+    }
+
+    .provide-items .item{
+        flex-basis: 48%;
+    }
+
+    .plan-price-list .item {
+        flex-basis: 48%;
+    }
+
+    footer .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+
+
+
+/* **************mobile ******************/
+@media only screen and (max-width:540px) {
+
+    /* navbar */
+    .nav-menu ul {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+        top: -1000%;
+        left: 0;
+        z-index: 100;
+        background: rgb(255, 255, 255);
+        transition: 0.5s;
+    }
+
+    .nav-menu ul li {
+        display: block;
+        transition: 0.5s;
+        padding: 8px 0;
+        border-bottom: 1px solid rgb(233, 227, 227);
+        
+    }
+    .nav-menu ul li:nth-child(4){
+        border-bottom: 0;
+    }
+    .nav-menu ul li a{
+        color: #000;
+    }
+
+    .nav-menu ul li:hover {
+        background: rgb(221, 217, 217);
+    }
+
+    .nav-menu label {
+        display: block;
+        font-size: 24px;
+
+    }
+
+    .nav-menu #click:checked~ul {
+        top: 100%;
+    }
+
+    /* navbar */
+
+    .banner-search {
+        width: 100%;
+    }
+
+    .search-bar {
+        padding-top: 30px;
+        flex-direction: column;
+    }
+
+    .search-bar>input[type=text] {
+        width: 90%;
+    }
+
+    .search-bar .btn {
+        width: 180px;
+        border-left: 2px solid;
+    }
+
+    .log-in {
+        width: 85%;
+        margin: auto;
+        transform: translatey(0);
+    }
+
+    .log-in form {
+        margin: auto;
+    }
+
+    /* quary */
+    .quary-contant div {
+        width: 100%;
+    }
+
+    .quary-contant div img {
+        width: 70%;
+    }
+
+    .provide-items .item{
+        flex-basis: 80%;
+        margin: 15px auto;
+    }
+
+    /* quary-end */
+
+    .plan-price-list .item {
+        flex-basis: 85%;
+        margin: 0 auto 25px;
+    }
+
+    .Cloud-Features-content{
+        grid-template-columns: 1fr;
+    }
+
+    footer .container div {
+        flex-basis: 45%;
+    }
+
+    footer .container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+}
+
+/* *******responsive******* */
+/* *******responsive******* */
